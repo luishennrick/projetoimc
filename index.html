@@ -1,1 +1,71 @@
-
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="./js/imc.js" async defer></script>
+        <link rel="stylesheet" href="./css/style.css"/>
+        <style>
+            * {
+                  box-sizing: border-box;}
+         </style>
+    </head>
+    <body>
+        <header style="background-position: 50% -500px;">
+            <h1 class="h1">Calculador IMC</h1>
+          </header>
+          <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #323435;">
+              <a class="navbar-brand" href="">Menu</a>
+              <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                  aria-expanded="false" aria-label="Toggle navigation"></button>
+              <div class="collapse navbar-collapse" id="collapsibleNavId">
+                  <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                      <li class="nav-item active">
+                          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="https://bvsms.saude.gov.br/bvs/dicas/215_obesidade.html">Ministério da Saúde</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sites Úteis</a>
+                          <div class="dropdown-menu" aria-labelledby="dropdownId">
+                              <a class="dropdown-item" href="https://www.saudenaosepesa.com.br">Saúde não se pesa</a>
+                              <a class="dropdown-item" href="https://saudebrasil.saude.gov.br/peso-saudavel">Saúde Brasil</a>
+                          </div>
+                      </li>
+                  </ul>
+              </div>
+          </nav>
+        <div class="row">
+         <div class="column middle">
+          <h3>IMC</h3>
+          <p>IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde para calcular o peso ideal de cada pessoa.</p>
+          <p>O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada ao quadrado. Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 24,9.</p>
+          <p>Quer descobrir seu IMC? Insira seu peso e sua altura nos campos abaixo e compare com os índices da tabela. Importante: siga os exemplos e use pontos como separadores.</p>
+          <div class="alinhar">
+            <label for="peso">Peso:</label><br/>
+            <input type="text" id='peso' placeholder="Digite o Peso ex: 80.2"><br/><br/>
+            <label for="Altura">Altura:</label><br/>
+            <input type="text" id='altura' placeholder="Digite a Altura ex: 1.80"><br/><br/>
+            <input type="submit" class="btn btn-success" value="enviar" onclick= "cimc()"><br/><br/>
+            <p class="round3" id="imc"></p>
+            <p class="round4" id="vimc"></p>
+          </div>
+         </div>
+         <div class="column side">
+          <div class="alinhar">
+            <img src="./img/ali.jpg" class="rounded" alt="Cinque Terre">
+            <img src="./img/ali.png" class="rounded" alt="Cinque Terre">
+          </div>
+        </div>
+      </div>
+      <footer><p>copyright: © 2021</p></footer>
+    </body>
+</html>
